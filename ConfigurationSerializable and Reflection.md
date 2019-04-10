@@ -111,7 +111,8 @@ public Human(Map<String, Object> map) {
   }
 }
 ```
-用`reflection`寫會發現有這一行`if (key.equalsIgnoreCase("=="))`是因為從`config`裡拿出來的是一個`map`它會包含這個`key(==)`所以要寫這行，不然會丟沒有這個成員的錯誤；用其他方法的話就依樣畫葫蘆就好。
+用`reflection`寫會發現有這一行`if (key.equalsIgnoreCase("=="))`是因為從`config`裡拿出來的是一個`map`它會包含這個`key(==)`所以要寫這行，不然會丟沒有這個成員的錯誤；用其他方法的話就依樣畫葫蘆就好。  
+再來是因為在序列化的時候已經確定`key`就是成員的名字，所以這邊不需要再檢查直接設值就好。
 ***
 最後的最後，一個非常重要的：**必須要註冊這個`Class`**，寫在插件開啟`onEnable()`中即可
 ```Java
