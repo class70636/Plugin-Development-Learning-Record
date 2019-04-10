@@ -5,4 +5,5 @@
 Discord: tm#1853
 ```
 
-* [實作ConfigurationSerializable及熟練Reflection](https://github.com/class70636/Plugin-Development-Learning-Record/blob/master/ConfigurationSerializable%20and%20Reflection.md)
+#### 我的學習紀錄
+* [實作ConfigurationSerializable以及熟悉Reflection](https://github.com/class70636/Plugin-Development-Learning-Record/blob/master/ConfigurationSerializable%20and%20Reflection.md)
