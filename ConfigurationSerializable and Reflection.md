@@ -61,10 +61,9 @@ public Map<String, Object> serialize() {
     
   try {
     //取得所有成員
-    for (Field f : this.getClass().getDeclaredFields()) {
+    for (Field f : this.getClass().getDeclaredFields()) 
       //將成員存到map
       map.put(f.getName(), f.get(this));
-    }
   }catch(Exception e) {
     e.printStackTrace();
   }
