@@ -5,7 +5,7 @@
 
 #### 我的學習紀錄
 * [實作ConfigurationSerializable以及熟悉Reflection][learn_config_reflection]
-* [Protocolib-PacketWrapper封包應用][learn_wrapper]
+* [ProtocolLib-PacketWrapper封包應用][learn_wrapper]
 
 [learn_config_reflection]: https://github.com/class70636/Plugin-Development-Learning-Record/blob/master/ConfigurationSerializable%20and%20Reflection.md
 [learn_wrapper]: https://github.com/class70636/Plugin-Development-Learning-Record/blob/master/PacketWrapper_Application.md
