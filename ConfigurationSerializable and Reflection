@@ -1,1 +1,8 @@
+最近在用config存取物品時很常用到這兩個method:
+* `config.set(path, item);` 
+* `ItemStack item = config.getItemStack(path);`
 
+那我就在想
+> **如果自己寫的物件也用這種方法存取我就不用自己寫一個load()和save()方法了**
+
+於是乎
