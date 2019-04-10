@@ -17,9 +17,9 @@
   ByteBuf bf = Unpooled.buffer(256);
   bf.setByte(0, (byte) 0);
   bf.writerIndex(1);
+  wpscp.setContentsBuffer(bf);
   wpscp.getHandle().getModifier().write(1, MinecraftReflection.getPacketDataSerializer(bf));
   wpscp.getHandle().getStrings().write(0, "MC|BOpen");
-  wpscp.setContentsBuffer(bf);
   wpscp.sendPacket(p);
   ```
 
