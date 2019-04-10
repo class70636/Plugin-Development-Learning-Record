@@ -4,12 +4,23 @@
 > * [ProtocolLib github][pro_git]
 > * [PacketWrapper github][pw_git]
 
-* `ActionBar`(_`WrapperPlayServerChat`_)
+* `Action bar`(_`WrapperPlayServerChat`_)
   ```Java
   WrapperPlayServerChat wpsc = new WrapperPlayServerChat();
   wpsc.setChatType(ChatType.GAME_INFO);
   wpsc.setMessage(WrappedChatComponent.fromText(message));
   wpsc.sendPacket(p);
+  ```
+* `Open book`(_`WrapperPlayServerCustomPayload`_)
+  ```Java
+  WrapperPlayServerCustomPayload wpscp = new WrapperPlayServerCustomPayload();
+  ByteBuf bf = Unpooled.buffer(256);
+  bf.setByte(0, (byte) 0);
+  bf.writerIndex(1);
+  wpscp.getHandle().getModifier().write(1, MinecraftReflection.getPacketDataSerializer(bf));
+  wpscp.getHandle().getStrings().write(0, "MC|BOpen");
+  wpscp.setContentsBuffer(bf);
+  wpscp.sendPacket(p);
   ```
 
 [pro_wiki]: https://wiki.vg/Protocol
