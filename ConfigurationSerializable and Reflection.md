@@ -181,7 +181,7 @@ public class Human implements ConfigurationSerializable {
 #### 測試
 1. 存`Human`物件到`config`，這裡使用`/sethuman`指令去存
 ```Java
-Human h = new Human("class70635", 24);
+Human h = new Human("class70635", 99);
 getConfig().set("human_save", h);
 saveConfig();
 ```
@@ -190,7 +190,7 @@ saveConfig();
 human_save:
   ==: Human
   name: class70635
-  age: 24
+  age: 99
 ```
 3. 用`/gethuman`指令取得`Human`物件
 ```Java
@@ -199,7 +199,7 @@ p.sendMessage(h.getName() + ", " + h.getAge() + "歲");
 ```
 4. 輸出
 ```
-class70635, 24歲
+class70635, 99歲
 ```
 
 
