@@ -24,7 +24,7 @@
 * `Swing a sword`(_`WrapperPlayServerAnimation`_)
   ```Java
   WrapperPlayServerAnimation wpsa = new WrapperPlayServerAnimation();
-  wpsa.setEntityID(player.getId());
+  wpsa.setEntityID(p.getEntityId());
   wpsa.setAnimation(0);
   wpsa.sendPacket(p);
   ```
