@@ -21,7 +21,7 @@
   wpscp.getHandle().getStrings().write(0, "MC|BOpen");
   wpscp.sendPacket(p);
   ```
-* `Swing a sword`(_`WrapperPlayServerAnimation`_)
+* `Swing an item in main hand`(_`WrapperPlayServerAnimation`_)
   ```Java
   WrapperPlayServerAnimation wpsa = new WrapperPlayServerAnimation();
   wpsa.setEntityID(p.getEntityId());
