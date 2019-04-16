@@ -21,6 +21,13 @@
   wpscp.getHandle().getStrings().write(0, "MC|BOpen");
   wpscp.sendPacket(p);
   ```
+* `Swing a sword`(_`WrapperPlayServerAnimation`_)
+  ```Java
+  WrapperPlayServerAnimation wpsa = new WrapperPlayServerAnimation();
+  wpsa.setEntityID(player.getId());
+  wpsa.setAnimation(0);
+  wpsa.sendPacket(p);
+  ```
 
 [pro_wiki]: https://wiki.vg/Protocol
 [pro_git]: https://github.com/dmulloy2/ProtocolLib/
