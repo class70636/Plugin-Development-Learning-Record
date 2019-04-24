@@ -6,6 +6,8 @@
 #### 我的學習紀錄
 * [實作ConfigurationSerializable以及熟悉Reflection][learn_config_reflection]
 * [ProtocolLib-PacketWrapper封包應用][learn_wrapper]
+* [正規表示式(Regular Expression)][learn_regular]
 
 [learn_config_reflection]: https://github.com/class70636/Plugin-Development-Learning-Record/blob/master/ConfigurationSerializable%20and%20Reflection.md
 [learn_wrapper]: https://github.com/class70636/Plugin-Development-Learning-Record/blob/master/PacketWrapper_Application.md
+[learn_regular]: https://github.com/class70636/Plugin-Development-Learning-Record/blob/master/Regular%20expression.md
